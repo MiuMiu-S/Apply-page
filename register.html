@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title></title>
+		<link href="https://cdn.bootcss.com/framework7/1.5.2/css/framework7.ios.min.css" rel="stylesheet">
+		<link href="https://cdn.bootcss.com/framework7/1.5.2/css/framework7.ios.colors.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="register.css" />
+		<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+	</head>
+
+	<body>
+
+		<div class="views">
+			<div class="view view-main">
+				<div class="pages">
+					<div data-page="home" class="page navbar-fixed">
+						<div class="navbar">
+						   
+						   
+						</div>
+						<div class="page-content">
+							<div class="content-block">
+								<div class="content-detail">
+									<input type="hidden" id="cityId" value="">
+									<div class="title">注册申请</div>
+									<p class="info">请填写以下内容</p>
+
+									<div class="list">
+										<div class="item">姓名</div>
+										<input type="text" id="realname" class="item-value" placeholder="请输入真实姓名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入真实姓名'">
+										<span class="clean"><img src="images/btn_delect@2x.png" alt=""></span>
+									</div>
+									<div class="list">
+										<div class="item">身份证</div>
+										<input type="text" id="cardid" class="item-value" placeholder="请输入本人身份证号" onfocus="this.placeholder=''" onblur="this.placeholder='请输入本人身份证号'">
+										<span class="clean"><img src="images/btn_delect@2x.png" alt=""></span>
+									</div>
+									<div class="list">
+										<div class="item">手机号</div>
+										<input type="number" id="phone" class="item-value" pattern="[0-9]*" placeholder="请输入11位手机号" onfocus="this.placeholder=''" onblur="this.placeholder='请输入11位手机号'">
+										<span class="clean"><img src="images/btn_delect@2x.png" alt=""></span>
+									</div>
+									<div class="list yzm">
+										<div class="item">验证码</div>
+										<input type="number" id="code" class="item-value" pattern="[0-9]*" placeholder="请输入验证码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入验证码'">
+										<span class="clean"><img src="images/btn_delect@2x.png" alt=""></span>
+										<b class="get-confirmcode" href="javascript:;" onClick="codeNock();">获取验证码</b>
+									</div>
+									<div class="list">
+										<div class="item">银行卡号</div>
+										<input type="tel" id="bankCard" class="item-value" name="cardNum" placeholder="请输入银行卡号" onfocus="this.placeholder=''" onblur="this.placeholder='请输入北京银行卡号'">
+										<span class="clean"><img src="images/btn_delect@2x.png" alt=""></span>
+									</div>
+									<div class="list">
+										<div class="item">所在地区</div>
+										<p class="city item-value">请选择所在地区</p>
+										<span class="clean"><img src="images/btn_delect@2x.png" alt=""></span>
+									</div>
+									<div class="agreement external"><span class=" onfocus"></span>&nbsp;&nbsp;商城协议</div>
+
+									<div class="btn">提交申请</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--选择城市面板-->
+		<div class="popup popup-areachoose">
+			<div class="content-block">
+				<a href="#" class="close-popup">返</a>
+				<div class="title">地区选择</div>
+				<div class="warp">
+
+					<span class="close-popup1">
+		                <b>北京</b>
+		                <p>目前已开通配送服务</p>
+		                <img src="./images/Group@2x.png">
+		          	</span>
+					<span class="close-popup1">
+		                <b>北京</b>
+		                <p>目前已开通配送服务</p>
+		                <img src="./images/Group@2x.png">
+		          	</span>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/framework7/1.5.2/js/framework7.min.js"></script>
+		<script type="text/javascript" src="./register.js?timestamp=1528685062"></script>
+	</body>
+
+</html>
